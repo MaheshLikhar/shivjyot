@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector('.header .navbar');
 let loginForm = document.querySelector('.header .login-form');
 let contactInfo = document.querySelector('.contact-info');
@@ -7,6 +8,8 @@ document.querySelector('#menu-btn').onclick = () =>{
    searchForm.classList.remove('active');
    loginForm.classList.remove('active');
 };
+
+
 
 document.querySelector('#login-btn').onclick = () =>{
    loginForm.classList.toggle('active');
@@ -32,6 +35,12 @@ window.onscroll = () =>{
 var swiper = new Swiper(".home-slider", {
    loop:true,
    grabCursor:true,
+ 
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
    navigation: {
      nextEl: ".swiper-button-next",
      prevEl: ".swiper-button-prev",
@@ -42,6 +51,11 @@ var swiper = new Swiper(".reviews-slider", {
    loop:true,
    grabCursor:true,
    spaceBetween: 20,
+     centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
    breakpoints: {
       640: {
         slidesPerView: 1,
@@ -56,9 +70,16 @@ var swiper = new Swiper(".reviews-slider", {
 });
 
 var swiper = new Swiper(".blogs-slider", {
+	
+	
    loop:true,
    grabCursor:true,
    spaceBetween: 20,
+     centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
    breakpoints: {
       640: {
         slidesPerView: 1,
